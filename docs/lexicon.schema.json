@@ -1,0 +1,175 @@
+{
+  "$defs": {
+    "ParentRelation": {
+      "properties": {
+        "entity_id": {
+          "title": "Entity Id",
+          "type": "string"
+        },
+        "relation": {
+          "enum": [
+            "administrative_parent",
+            "located_in"
+          ],
+          "title": "Relation",
+          "type": "string"
+        }
+      },
+      "required": [
+        "entity_id",
+        "relation"
+      ],
+      "title": "ParentRelation",
+      "type": "object"
+    },
+    "Span": {
+      "properties": {
+        "start": {
+          "minimum": 0,
+          "title": "Start",
+          "type": "integer"
+        },
+        "end": {
+          "exclusiveMinimum": 0,
+          "title": "End",
+          "type": "integer"
+        }
+      },
+      "required": [
+        "start",
+        "end"
+      ],
+      "title": "Span",
+      "type": "object"
+    },
+    "VerifiedComponent": {
+      "properties": {
+        "text": {
+          "title": "Text",
+          "type": "string"
+        },
+        "role": {
+          "enum": [
+            "proper_name",
+            "generic",
+            "qualifier",
+            "number",
+            "unknown",
+            "not_entity"
+          ],
+          "title": "Role",
+          "type": "string"
+        },
+        "span": {
+          "$ref": "#/$defs/Span"
+        }
+      },
+      "required": [
+        "text",
+        "role",
+        "span"
+      ],
+      "title": "VerifiedComponent",
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "entity_id": {
+      "title": "Entity Id",
+      "type": "string"
+    },
+    "canonical_name": {
+      "title": "Canonical Name",
+      "type": "string"
+    },
+    "aliases": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Aliases",
+      "type": "array"
+    },
+    "entity_type": {
+      "enum": [
+        "province",
+        "city",
+        "district",
+        "town",
+        "village",
+        "road",
+        "bridge",
+        "water",
+        "mountain",
+        "poi",
+        "organization",
+        "house_number",
+        "separator",
+        "unknown",
+        "not_entity"
+      ],
+      "title": "Entity Type",
+      "type": "string"
+    },
+    "parent_relations": {
+      "items": {
+        "$ref": "#/$defs/ParentRelation"
+      },
+      "title": "Parent Relations",
+      "type": "array"
+    },
+    "verified_components": {
+      "items": {
+        "$ref": "#/$defs/VerifiedComponent"
+      },
+      "title": "Verified Components",
+      "type": "array"
+    },
+    "valid_from": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Valid From"
+    },
+    "valid_to": {
+      "anyOf": [
+        {
+          "format": "date",
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "title": "Valid To"
+    },
+    "source": {
+      "title": "Source",
+      "type": "string"
+    },
+    "version": {
+      "title": "Version",
+      "type": "string"
+    }
+  },
+  "required": [
+    "entity_id",
+    "canonical_name",
+    "aliases",
+    "entity_type",
+    "parent_relations",
+    "verified_components",
+    "valid_from",
+    "valid_to",
+    "source",
+    "version"
+  ],
+  "title": "LexiconEntry",
+  "type": "object"
+}

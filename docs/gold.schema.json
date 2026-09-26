@@ -1,0 +1,179 @@
+{
+  "$defs": {
+    "GoldComponent": {
+      "properties": {
+        "span": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            }
+          ],
+          "title": "Span",
+          "type": "array"
+        },
+        "role": {
+          "enum": [
+            "proper_name",
+            "generic",
+            "qualifier",
+            "number",
+            "unknown",
+            "not_entity"
+          ],
+          "title": "Role",
+          "type": "string"
+        }
+      },
+      "required": [
+        "span",
+        "role"
+      ],
+      "title": "GoldComponent",
+      "type": "object"
+    },
+    "GoldUnit": {
+      "properties": {
+        "span": {
+          "maxItems": 2,
+          "minItems": 2,
+          "prefixItems": [
+            {
+              "minimum": 0,
+              "type": "integer"
+            },
+            {
+              "exclusiveMinimum": 0,
+              "type": "integer"
+            }
+          ],
+          "title": "Span",
+          "type": "array"
+        },
+        "entity_type": {
+          "enum": [
+            "province",
+            "city",
+            "district",
+            "town",
+            "village",
+            "road",
+            "bridge",
+            "water",
+            "mountain",
+            "poi",
+            "organization",
+            "house_number",
+            "separator",
+            "unknown",
+            "not_entity"
+          ],
+          "title": "Entity Type",
+          "type": "string"
+        },
+        "components": {
+          "items": {
+            "$ref": "#/$defs/GoldComponent"
+          },
+          "minItems": 1,
+          "title": "Components",
+          "type": "array"
+        },
+        "oov": {
+          "default": false,
+          "title": "Oov",
+          "type": "boolean"
+        }
+      },
+      "required": [
+        "span",
+        "entity_type",
+        "components"
+      ],
+      "title": "GoldUnit",
+      "type": "object"
+    }
+  },
+  "properties": {
+    "id": {
+      "title": "Id",
+      "type": "string"
+    },
+    "text": {
+      "maxLength": 128,
+      "minLength": 1,
+      "title": "Text",
+      "type": "string"
+    },
+    "input_kind": {
+      "enum": [
+        "place_name",
+        "address"
+      ],
+      "title": "Input Kind",
+      "type": "string"
+    },
+    "region_context": {
+      "anyOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "null"
+        }
+      ],
+      "default": null,
+      "title": "Region Context"
+    },
+    "annotation_version": {
+      "title": "Annotation Version",
+      "type": "string"
+    },
+    "split": {
+      "enum": [
+        "demo",
+        "train",
+        "dev",
+        "test"
+      ],
+      "title": "Split",
+      "type": "string"
+    },
+    "place_groups": {
+      "items": {
+        "type": "string"
+      },
+      "title": "Place Groups",
+      "type": "array"
+    },
+    "units": {
+      "items": {
+        "$ref": "#/$defs/GoldUnit"
+      },
+      "minItems": 1,
+      "title": "Units",
+      "type": "array"
+    },
+    "notes": {
+      "default": "",
+      "title": "Notes",
+      "type": "string"
+    }
+  },
+  "required": [
+    "id",
+    "text",
+    "input_kind",
+    "annotation_version",
+    "split",
+    "units"
+  ],
+  "title": "GoldDocument",
+  "type": "object"
+}

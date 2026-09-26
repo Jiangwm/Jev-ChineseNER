@@ -1,0 +1,96 @@
+[
+  {
+    "text": "江苏省南京市栖霞区仙林大道",
+    "units": [
+      "江苏省",
+      "南京市",
+      "栖霞区",
+      "仙林大道"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "南京市长江大桥",
+    "units": [
+      "南京市",
+      "长江大桥"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "上海市南京东路",
+    "units": [
+      "上海市",
+      "南京东路"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "东莞市",
+    "units": [
+      "东莞市"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "place_name",
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "内蒙古自治区",
+    "units": [
+      "内蒙古自治区"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "place_name",
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "广西壮族自治区",
+    "units": [
+      "广西壮族自治区"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "place_name",
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  },
+  {
+    "text": "北京市海淀区中关村大街",
+    "units": [
+      "北京市",
+      "海淀区",
+      "中关村大街"
+    ],
+    "source": "人工核验演示回归；仅精确匹配可快速通过",
+    "version": "fast-0.2.0",
+    "input_kinds": [
+      "address"
+    ],
+    "lexicon_fingerprint": "1f335ca940b8735c83a7e52d933ad01d51237c45c4e998d1db74f0cf49c6943b"
+  }
+]

@@ -1,0 +1,167 @@
+[
+  {
+    "text": "南京大学",
+    "expect": "organization，不应仅凭名称链接具体校址"
+  },
+  {
+    "text": "上海市南京东路",
+    "expect": "道路内部南京是 proper_name，不是 city 子实体"
+  },
+  {
+    "text": "东莞市",
+    "expect": "东莞/市；不能切东/莞/市"
+  },
+  {
+    "text": "内蒙古自治区",
+    "expect": "内蒙古/自治区；内不是方向限定"
+  },
+  {
+    "text": "市长",
+    "expect": "不能仅见市字就识别为城市"
+  },
+  {
+    "text": "南京大学生",
+    "expect": "不能因含大学就直接认定完整机构；属于不支持的篇章语境反例"
+  },
+  {
+    "text": "仙林大道南京市",
+    "expect": "保留可解码性，不能因层级倒序拒绝"
+  },
+  {
+    "text": "南京长江大桥",
+    "expect": "完整桥名与南京/长江大桥存在候选竞争，应保留歧义"
+  },
+  {
+    "text": "南京市长江大桥",
+    "expect": "南京市/长江大桥；不得将市长构成一词"
+  },
+  {
+    "text": "广西壮族自治区",
+    "expect": "广西/壮族/自治区；父单元完整"
+  },
+  {
+    "text": "市场",
+    "expect": "保留市场完整；不能仅因含市字产生 city 单元。unknown/not_entity 均可，本例不要求模型已理解普通名词。",
+    "assertions": {
+      "units": [
+        "市场"
+      ],
+      "forbidden_types": [
+        "city"
+      ]
+    }
+  },
+  {
+    "text": "北京路",
+    "expect": "完整 road；北京/proper_name + 路/generic，不得切为北京(city)/路，也不产生 city 子实体。",
+    "assertions": {
+      "units": [
+        "北京路"
+      ],
+      "types": [
+        "road"
+      ],
+      "components": [
+        [
+          [
+            "北京",
+            "proper_name"
+          ],
+          [
+            "路",
+            "generic"
+          ]
+        ]
+      ],
+      "forbidden_types": [
+        "city"
+      ]
+    }
+  },
+  {
+    "text": "东南大学",
+    "expect": "完整 organization；东南/proper_name + 大学/generic，不得将东/南拆成方向 qualifier，也不能仅凭校名认定 poi 校区。",
+    "assertions": {
+      "units": [
+        "东南大学"
+      ],
+      "types": [
+        "organization"
+      ],
+      "components": [
+        [
+          [
+            "东南",
+            "proper_name"
+          ],
+          [
+            "大学",
+            "generic"
+          ]
+        ]
+      ],
+      "forbidden_types": [
+        "poi"
+      ]
+    }
+  },
+  {
+    "text": "宁夏回族自治区",
+    "expect": "完整 province；宁夏/proper_name + 回族/qualifier + 自治区/generic，不得切成宁夏回族/自治区，也不得把自治区尾字区误作 district。",
+    "assertions": {
+      "units": [
+        "宁夏回族自治区"
+      ],
+      "types": [
+        "province"
+      ],
+      "components": [
+        [
+          [
+            "宁夏",
+            "proper_name"
+          ],
+          [
+            "回族",
+            "qualifier"
+          ],
+          [
+            "自治区",
+            "generic"
+          ]
+        ]
+      ],
+      "forbidden_types": [
+        "district"
+      ]
+    }
+  },
+  {
+    "text": "厦门大学",
+    "expect": "完整 organization；厦门/proper_name + 大学/generic，不得拆为厦门(city)/大学，也不将机构名等同某一 poi 校址。",
+    "assertions": {
+      "units": [
+        "厦门大学"
+      ],
+      "types": [
+        "organization"
+      ],
+      "components": [
+        [
+          [
+            "厦门",
+            "proper_name"
+          ],
+          [
+            "大学",
+            "generic"
+          ]
+        ]
+      ],
+      "forbidden_types": [
+        "city",
+        "poi"
+      ]
+    }
+  }
+]

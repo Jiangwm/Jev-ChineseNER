@@ -1,0 +1,1240 @@
+[
+  {
+    "entity_id": "demo:js",
+    "canonical_name": "江苏省",
+    "aliases": [
+      "江苏"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "江苏",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "省",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:nj",
+    "canonical_name": "南京市",
+    "aliases": [
+      "南京"
+    ],
+    "entity_type": "city",
+    "parent_relations": [
+      {
+        "entity_id": "demo:js",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "南京",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:qx",
+    "canonical_name": "栖霞区",
+    "aliases": [],
+    "entity_type": "district",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nj",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "栖霞",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "区",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:xl",
+    "canonical_name": "仙林大道",
+    "aliases": [],
+    "entity_type": "road",
+    "parent_relations": [
+      {
+        "entity_id": "demo:qx",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "仙林",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "大道",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:sh",
+    "canonical_name": "上海市",
+    "aliases": [
+      "上海"
+    ],
+    "entity_type": "city",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "上海",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:njdl",
+    "canonical_name": "南京东路",
+    "aliases": [],
+    "entity_type": "road",
+    "parent_relations": [
+      {
+        "entity_id": "demo:sh",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "南京",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "东",
+        "role": "qualifier",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      },
+      {
+        "text": "路",
+        "role": "generic",
+        "span": {
+          "start": 3,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:gd",
+    "canonical_name": "广东省",
+    "aliases": [
+      "广东"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "广东",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "省",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:dg",
+    "canonical_name": "东莞市",
+    "aliases": [
+      "东莞"
+    ],
+    "entity_type": "city",
+    "parent_relations": [
+      {
+        "entity_id": "demo:gd",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "东莞",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:nmg",
+    "canonical_name": "内蒙古自治区",
+    "aliases": [
+      "内蒙古"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "内蒙古",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 3
+        }
+      },
+      {
+        "text": "自治区",
+        "role": "generic",
+        "span": {
+          "start": 3,
+          "end": 6
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:gx",
+    "canonical_name": "广西壮族自治区",
+    "aliases": [
+      "广西"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "广西",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "壮族",
+        "role": "qualifier",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      },
+      {
+        "text": "自治区",
+        "role": "generic",
+        "span": {
+          "start": 4,
+          "end": 7
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:cjdq",
+    "canonical_name": "长江大桥",
+    "aliases": [],
+    "entity_type": "bridge",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "长江",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "大桥",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:njcjdq",
+    "canonical_name": "南京长江大桥",
+    "aliases": [],
+    "entity_type": "bridge",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nj",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "南京",
+        "role": "qualifier",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "长江",
+        "role": "proper_name",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      },
+      {
+        "text": "大桥",
+        "role": "generic",
+        "span": {
+          "start": 4,
+          "end": 6
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:nju",
+    "canonical_name": "南京大学",
+    "aliases": [
+      "南大"
+    ],
+    "entity_type": "organization",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nj",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "南京",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "大学",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:njuc",
+    "canonical_name": "南京大学仙林校区",
+    "aliases": [],
+    "entity_type": "poi",
+    "parent_relations": [
+      {
+        "entity_id": "demo:qx",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "南京大学",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 4
+        }
+      },
+      {
+        "text": "仙林",
+        "role": "qualifier",
+        "span": {
+          "start": 4,
+          "end": 6
+        }
+      },
+      {
+        "text": "校区",
+        "role": "generic",
+        "span": {
+          "start": 6,
+          "end": 8
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:bj",
+    "canonical_name": "北京市",
+    "aliases": [
+      "北京"
+    ],
+    "entity_type": "city",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "北京",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:hd",
+    "canonical_name": "海淀区",
+    "aliases": [],
+    "entity_type": "district",
+    "parent_relations": [
+      {
+        "entity_id": "demo:bj",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "海淀",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "区",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:zgc",
+    "canonical_name": "中关村大街",
+    "aliases": [],
+    "entity_type": "road",
+    "parent_relations": [
+      {
+        "entity_id": "demo:hd",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "中关村",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 3
+        }
+      },
+      {
+        "text": "大街",
+        "role": "generic",
+        "span": {
+          "start": 3,
+          "end": 5
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:hz",
+    "canonical_name": "杭州市",
+    "aliases": [
+      "杭州"
+    ],
+    "entity_type": "city",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "杭州",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:xh",
+    "canonical_name": "西湖",
+    "aliases": [],
+    "entity_type": "water",
+    "parent_relations": [
+      {
+        "entity_id": "demo:hz",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "西",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 1
+        }
+      },
+      {
+        "text": "湖",
+        "role": "generic",
+        "span": {
+          "start": 1,
+          "end": 2
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:tp",
+    "canonical_name": "太平村",
+    "aliases": [],
+    "entity_type": "village",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "太平",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "村",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:xj",
+    "canonical_name": "仙林街道",
+    "aliases": [],
+    "entity_type": "town",
+    "parent_relations": [
+      {
+        "entity_id": "demo:qx",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "仙林",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "街道",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:zs",
+    "canonical_name": "紫金山",
+    "aliases": [],
+    "entity_type": "mountain",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nj",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "紫金",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "山",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:rm",
+    "canonical_name": "人民路",
+    "aliases": [],
+    "entity_type": "road",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "人民",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "路",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:cs",
+    "canonical_name": "长沙市",
+    "aliases": [
+      "长沙"
+    ],
+    "entity_type": "city",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "长沙",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目人工演示词库；非权威行政区划或实体链接库",
+    "version": "demo-2026.09.20"
+  },
+  {
+    "entity_id": "demo:zj",
+    "canonical_name": "浙江省",
+    "aliases": [
+      "浙江"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "浙江",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "省",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:fj",
+    "canonical_name": "福建省",
+    "aliases": [
+      "福建"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "福建",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "省",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:xm",
+    "canonical_name": "厦门市",
+    "aliases": [
+      "厦门"
+    ],
+    "entity_type": "city",
+    "parent_relations": [
+      {
+        "entity_id": "demo:fj",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "厦门",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:sm",
+    "canonical_name": "思明区",
+    "aliases": [
+      "思明"
+    ],
+    "entity_type": "district",
+    "parent_relations": [
+      {
+        "entity_id": "demo:xm",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "思明",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "区",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:xmu",
+    "canonical_name": "厦门大学",
+    "aliases": [
+      "厦大"
+    ],
+    "entity_type": "organization",
+    "parent_relations": [
+      {
+        "entity_id": "demo:xm",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "厦门",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "大学",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:nx",
+    "canonical_name": "宁夏回族自治区",
+    "aliases": [
+      "宁夏"
+    ],
+    "entity_type": "province",
+    "parent_relations": [],
+    "verified_components": [
+      {
+        "text": "宁夏",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "回族",
+        "role": "qualifier",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      },
+      {
+        "text": "自治区",
+        "role": "generic",
+        "span": {
+          "start": 4,
+          "end": 7
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:yc",
+    "canonical_name": "银川市",
+    "aliases": [
+      "银川"
+    ],
+    "entity_type": "city",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nx",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "银川",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:xq",
+    "canonical_name": "兴庆区",
+    "aliases": [
+      "兴庆"
+    ],
+    "entity_type": "district",
+    "parent_relations": [
+      {
+        "entity_id": "demo:yc",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "兴庆",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "区",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:gz",
+    "canonical_name": "广州市",
+    "aliases": [
+      "广州"
+    ],
+    "entity_type": "city",
+    "parent_relations": [
+      {
+        "entity_id": "demo:gd",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "广州",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "市",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:yx",
+    "canonical_name": "越秀区",
+    "aliases": [
+      "越秀"
+    ],
+    "entity_type": "district",
+    "parent_relations": [
+      {
+        "entity_id": "demo:gz",
+        "relation": "administrative_parent"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "越秀",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "区",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:bjl",
+    "canonical_name": "北京路",
+    "aliases": [],
+    "entity_type": "road",
+    "parent_relations": [
+      {
+        "entity_id": "demo:yx",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "北京",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "路",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 3
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  },
+  {
+    "entity_id": "demo:seu",
+    "canonical_name": "东南大学",
+    "aliases": [
+      "东大"
+    ],
+    "entity_type": "organization",
+    "parent_relations": [
+      {
+        "entity_id": "demo:nj",
+        "relation": "located_in"
+      }
+    ],
+    "verified_components": [
+      {
+        "text": "东南",
+        "role": "proper_name",
+        "span": {
+          "start": 0,
+          "end": 2
+        }
+      },
+      {
+        "text": "大学",
+        "role": "generic",
+        "span": {
+          "start": 2,
+          "end": 4
+        }
+      }
+    ],
+    "valid_from": null,
+    "valid_to": null,
+    "source": "项目编写的公开地名演示；未外部采集，非权威行政区划或实体链接库",
+    "version": "demo-2026.09.21"
+  }
+]

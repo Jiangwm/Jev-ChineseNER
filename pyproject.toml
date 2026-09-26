@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling>=1.27"]
+build-backend = "hatchling.build"
+
+[project]
+name = "jev-chinesener"
+version = "0.1.0"
+description = "Jev 驱动的中文地名多粒度分词器：候选图、类型判定与确定性解码"
+requires-python = ">=3.11"
+dependencies = ["fastapi>=0.115,<1", "uvicorn>=0.34,<1", "pydantic>=2.10,<3", "jieba==0.42.1", "typesafe-sdk==0.5.7"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10", "pytest-asyncio>=0.25,<2", "httpx>=0.28,<1", "ruff>=0.11,<1"]
+
+[project.scripts]
+jev-chinesener = "jev_chinesener.cli:main"
+jev-evaluate = "jev_chinesener.evaluation:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/jev_chinesener"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"

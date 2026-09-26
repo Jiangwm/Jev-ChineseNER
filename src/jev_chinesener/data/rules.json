@@ -1,0 +1,42 @@
+{
+  "version": "rules-0.1.0",
+  "suffixes": {
+    "特别行政区": "province",
+    "自治区": "province",
+    "自治州": "city",
+    "自治县": "district",
+    "街道": "town",
+    "大道": "road",
+    "大街": "road",
+    "公路": "road",
+    "大桥": "bridge",
+    "校区": "poi",
+    "大学": "organization",
+    "省": "province",
+    "市": "city",
+    "区": "district",
+    "县": "district",
+    "镇": "town",
+    "乡": "town",
+    "村": "village",
+    "路": "road",
+    "桥": "bridge",
+    "湖": "water",
+    "河": "water",
+    "山": "mountain"
+  },
+  "negative_surfaces": [
+    "市长",
+    "长江",
+    "东西",
+    "自治区内",
+    "大学生",
+    "山东西路",
+    "南京大学生"
+  ],
+  "notes": [
+    "后缀仅生成候选，不确认实体类型。",
+    "东莞的东、内蒙古的内不可机械拆为方向。",
+    "禁止用省市道路顺序作为硬约束。"
+  ]
+}
